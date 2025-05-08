@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liiiiyuxuan</title>
+
+    <!-- preconnect + Permanent Marker & Merriweather -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Merriweather&display=swap"
+        rel="stylesheet"
+    />
+
+    <!-- Tailwind CDN + custom font families -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        hand: ['"Permanent Marker"', 'cursive'], 
+                        serif: ['Merriweather', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-serif text-gray-800 bg-white">
+
+    <!-- wrap everything in a centered container -->
+    <div class="max-w-2xl mx-auto px-4 py-16">
+        
+        <!-- Header (text stays left) -->
+        <header class="text-left">
+            <h1 class="font-hand text-5xl mb-6">Eason Li</h1>
+            <p class="mb-4 lowercase">
+                
+            </p>
+            <p class="mb-12 lowercase">
+                
+            </p>
+        </header>
+
+        <!-- Experience -->
+        <section class="text-left">
+            <h2 class="font-hand text-3xl mb-8 lowercase">experience</h2>
+
+            <!-- title -->
+            <div class="flex flex-col md:flex-row justify-between items-start mb-12">
+                <div class="md:w-2/3">
+                    <h3 class="text-2xl mb-2 lowercase">title</h3>
+                    <p class="mb-2 lowercase">
+                        what
+                    </p>
+                    <p class="italic text-gray-500 lowercase">
+                        <a href="https://google.com" class="hover:underline">link</a>
+                    </p>
+                </div>
+                <div class="mt-6 md:mt-0 md:text-right">
+                    <span class="block text-gray-500 mb-2 lowercase text-sm">
+                        time
+                    </span>
+                    <img
+                        src="img/rado.png"
+                        alt="logo"
+                        class="w-200 h-20 object-contain mx-auto md:mx-0"
+                    />
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="mt-16 pt-8 border-t border-gray-200 text-gray-600 text-sm flex flex-col md:flex-row items-center justify-between">
+        <p>helped by v0</p>
+        <div class="flex space-x-6 italic mt-4 md:mt-0">
+            <a href="https://linkedin.com/in/your-profile" target="_blank" class="hover:underline">linkedin</a>
+            <a href="https://github.com/your-username" target="_blank" class="hover:underline">github</a>
+            <a href="https://twitter.com/your-handle" target="_blank" class="hover:underline">x</a>
+            <a href="https://beli.link/your-page" target="_blank" class="hover:underline">beli</a>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

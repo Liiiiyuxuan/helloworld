@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joshua Yan</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Merriweather&display=swap"
+        rel="stylesheet"
+    />
+
+    <!-- Tailwind CDN + custom font families -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        hand: ['Caveat', 'cursive'],
+                        serif: ['Merriweather', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-serif text-gray-800 bg-white">
+
+    <!-- wrap everything in a centered container -->
+    <div class="max-w-2xl mx-auto px-4 py-16">
+        
+        <!-- Header (text stays left) -->
+        <header class="text-left">
+            <h1 class="font-hand text-5xl mb-6">Eason Li</h1>
+            <p class="mb-4 lowercase">
+                
+            </p>
+            <p class="mb-12 lowercase">
+                
+            </p>
+        </header>
+
+        <!-- Experience -->
+        <section class="text-left">
+            <h2 class="font-hand text-3xl mb-8 lowercase">experience</h2>
+
+            <!-- title -->
+            <div class="flex flex-col md:flex-row justify-between items-start mb-12">
+                <div class="md:w-2/3">
+                    <h3 class="text-2xl mb-2 lowercase">title</h3>
+                    <p class="mb-2 lowercase">
+                        what
+                    </p>
+                    <p class="italic text-gray-500 lowercase">
+                        <a href="https://google.com" class="hover:underline">link</a>
+                    </p>
+                </div>
+                <div class="mt-6 md:mt-0 md:text-right">
+                    <span class="block text-gray-500 mb-2 lowercase text-sm">
+                        time
+                    </span>
+                    <img src=".png" alt="image" class="w-20 mx-auto md:mx-0" />
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
