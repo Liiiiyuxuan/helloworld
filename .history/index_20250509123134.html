@@ -31,27 +31,12 @@
     </script>
 </head>
 
-<script src="script.js" defer></script>
-
-<body class="font-serif text-gray-800 bg-white dark:bg-gray-900 dark:text-gray-100">
+<body class="font-serif text-gray-800 bg-white">
 
 <!-- wrap everything in a centered container -->
 <div class="max-w-xl mx-auto px-4 py-16">
     <!-- Header (text stays left) -->
-    <header class="text-left relative">
-        <!-- Dark-mode toggle -->
-        <label class="absolute top-0 right-0 m-4 inline-flex items-center w-16 h-8 
-                bg-gray-800 dark:bg-orange-500 rounded-full cursor-pointer
-                peer-checked:bg-orange-500 transition-colors">
-            <input id="theme-toggle" type="checkbox" class="sr-only peer" />
-            <span class="absolute left-1 top-1 w-6 h-6 bg-white rounded-full
-                        transition-transform peer-checked:translate-x-8"></span>
-            <span class="absolute left-2 text-white text-sm transition-opacity
-                        peer-checked:opacity-0">🌙</span>
-            <span class="absolute right-2 text-white text-sm opacity-0 transition-opacity
-                        peer-checked:opacity-100">☀️</span>
-        </label>
-
+    <header class="text-left">
         <h1 class="font-hand text-5xl mb-6">Eason Li</h1>
         <p class="mb-4 lowercase">
             i'm a student at the University of Waterloo majoring in CS and CO. 
@@ -63,7 +48,7 @@
                 rel="noopener noreferrer"
                 class="hover:underline"
             >
-            [CV]
+                [CV]
             </a>
         </p>
     </header>
@@ -530,7 +515,7 @@
         </div>
     </section>
 
-    <footer class="mt-16 pt-8 border-t border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-400 text-sm flex flex-col md:flex-row items-center justify-between">
+    <footer class="mt-16 pt-8 border-t border-gray-200 text-gray-600 text-sm flex flex-col md:flex-row items-center justify-between">
         <p a href="#" id="copy-email" class="hover:underline">Email: e228li[at]uwaterloo[dot]ca</p>
         <div class="flex space-x-6 italic mt-4 md:mt-0">
             <a href="https://www.linkedin.com/in/eason-li-539994276/" target="_blank" class="hover:underline">linkedin</a>
@@ -540,6 +525,8 @@
     </footer>        
 
 </div>
+
+<script src="script.js"></script>
 
 </body>
 </html>

@@ -53,22 +53,3 @@ document.addEventListener('DOMContentLoaded', () => {
         toggle.textContent = isDark ? '☀️' : '🌙';
     });
 });
-
-// script.js
-document.addEventListener('DOMContentLoaded', () => {
-    const toggle = document.getElementById('theme-toggle');
-
-    // initialize state
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && prefersDark)) {
-        document.documentElement.classList.add('dark');
-        toggle.checked = true;
-    }
-
-    // sync on toggle
-    toggle.addEventListener('change', () => {
-        const isDark = toggle.checked;
-        document.documentElement.classList.toggle('dark', isDark);
-        localStorage.theme = isDark ? 'dark' : 'light';
-    });
-});

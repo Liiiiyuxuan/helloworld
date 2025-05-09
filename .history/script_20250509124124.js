@@ -67,8 +67,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // sync on toggle
     toggle.addEventListener('change', () => {
-        const isDark = toggle.checked;
-        document.documentElement.classList.toggle('dark', isDark);
-        localStorage.theme = isDark ? 'dark' : 'light';
+      const isDark = toggle.checked;
+      document.documentElement.classList.toggle('dark', isDark);
+      localStorage.theme = isDark ? 'dark' : 'light';
     });
-});
+  });
+  

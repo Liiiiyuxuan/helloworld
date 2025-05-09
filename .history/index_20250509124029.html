@@ -40,17 +40,33 @@
     <!-- Header (text stays left) -->
     <header class="text-left relative">
         <!-- Dark-mode toggle -->
-        <label class="absolute top-0 right-0 m-4 inline-flex items-center w-16 h-8 
-                bg-gray-800 dark:bg-orange-500 rounded-full cursor-pointer
-                peer-checked:bg-orange-500 transition-colors">
-            <input id="theme-toggle" type="checkbox" class="sr-only peer" />
-            <span class="absolute left-1 top-1 w-6 h-6 bg-white rounded-full
-                        transition-transform peer-checked:translate-x-8"></span>
-            <span class="absolute left-2 text-white text-sm transition-opacity
-                        peer-checked:opacity-0">🌙</span>
-            <span class="absolute right-2 text-white text-sm opacity-0 transition-opacity
-                        peer-checked:opacity-100">☀️</span>
-        </label>
+        <label class="absolute top-0 right-0 m-4 p-2 bg-gray-800 rounded-full cursor-pointer
+              peer-checked:bg-orange-500 transition-colors">
+  <!-- the invisible checkbox that drives everything -->
+  <input
+    id="theme-toggle"
+    type="checkbox"
+    class="sr-only peer"
+  />
+
+  <!-- the sliding “knob” -->
+  <span
+    class="absolute left-1 top-1 w-6 h-6 bg-white rounded-full
+           transition-transform peer-checked:translate-x-8"
+  ></span>
+
+  <!-- moon icon, fades out when checked -->
+  <span
+    class="absolute left-2 text-white text-sm transition-opacity
+           peer-checked:opacity-0"
+  >🌙</span>
+
+  <!-- sun icon, fades in when checked -->
+  <span
+    class="absolute right-2 text-white text-sm opacity-0 transition-opacity
+           peer-checked:opacity-100"
+  >☀️</span>
+</label>
 
         <h1 class="font-hand text-5xl mb-6">Eason Li</h1>
         <p class="mb-4 lowercase">

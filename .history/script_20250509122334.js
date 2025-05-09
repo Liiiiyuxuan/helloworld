@@ -36,39 +36,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-    const toggle = document.getElementById('theme-toggle');
+const toggle = document.getElementById('theme-toggle') 
+    // initialize based on user preference or system
     if (
         localStorage.theme === 'dark' ||
-        (!('theme' in localStorage) &&
-            window.matchMedia('(prefers-color-scheme: dark)').matches)
+        (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
     ) {
         document.documentElement.classList.add('dark');
-        toggle.textContent = '☀️';
     }
 
     toggle.addEventListener('click', () => {
-        const isDark = document.documentElement.classList.toggle('dark');
-        localStorage.theme = isDark ? 'dark' : 'light';
-        toggle.textContent = isDark ? '☀️' : '🌙';
-    });
+        document.documentElement.classList.toggle('dark');
+        localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+        toggle.textContent = document.documentElement.classList.contains('dark') ? '☀️' : '🌙';
 });
 
-// script.js
-document.addEventListener('DOMContentLoaded', () => {
-    const toggle = document.getElementById('theme-toggle');
-
-    // initialize state
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && prefersDark)) {
-        document.documentElement.classList.add('dark');
-        toggle.checked = true;
-    }
-
-    // sync on toggle
-    toggle.addEventListener('change', () => {
-        const isDark = toggle.checked;
-        document.documentElement.classList.toggle('dark', isDark);
-        localStorage.theme = isDark ? 'dark' : 'light';
-    });
-});
