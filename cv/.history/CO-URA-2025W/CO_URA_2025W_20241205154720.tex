@@ -1,0 +1,250 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+\item\small{
+    {#1 \vspace{-2pt}}
+}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.3in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%     \textbf{\href{https://www.linkedin.com/in/eason-li-539994276/}{\Large Eason Li}} & Email : \href{liiiiyuxuan@gmail.com}{liiiiyuxuan@gmail.com}\\
+%     \href{https://github.com/Liiiiyuxuan}{https://github.com/Liiiiyuxuan} & Mobile : +1-514-518-1729 \\
+% \end{tabular*}
+
+\qquad Chair, Department of Combinatorics and Optimization 
+
+
+
+Dear Dr. [Advisor's Last Name],
+
+I am writing to express my interest in the Undergraduate Research Assistantship within the Combinatorics and Optimization faculty. My enthusiasm for this opportunity stems from my profound interest in mathematics and its applications in solving complex problems, an area where I have devoted considerable time and effort during my academic journey.
+
+Throughout my studies, I have been consistently drawn to the challenges presented by abstract mathematical concepts and their optimization, particularly enjoying the process of deriving proofs and developing solutions that extend beyond theoretical understanding into practical applications. This has been complemented by my coursework in computer science, where I have honed my analytical and problem-solving skills.
+
+My communication skills, both written and oral, have been strengthened through numerous academic presentations and collaborative projects. I believe that these experiences, combined with my ability to assimilate complex information and articulate clear, logical conclusions, would make me a valuable contributor to your research team.
+
+I have been advised to apply to this position by [Mention the name of the advisor who recommended the URA], who believes that my background in mathematics and passion for learning would be well suited for the challenges presented by research in combinatorics and optimization.
+
+Enclosed with this letter are my resume and my most recent grade report for your review. I am very excited about the possibility of contributing to and learning from your prestigious team and am eager to bring my background in theoretical and applied mathematics to your ongoing projects.
+
+Thank you for considering my application. I look forward to the possibility of discussing this exciting opportunity with you. Please feel free to contact me at your earliest convenience at [Your Phone Number] or via email at [Your Email Address].
+
+Sincerely,
+
+[Your Full Name]
+
+\newpage
+
+\begin{center}
+    \textbf{\Huge \scshape Eason Li} \\ \vspace{1pt}
+    \small +1-514-518-1729 $|$ \href{liiiiyuxuan@gmail.com}{\underline{liiiiyuxuan@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/eason-li-539994276/}{\underline{linkedin.com/in/eason}} $|$
+    \href{https://github.com/Liiiiyuxuan}{\underline{github.com/liiiiyuxuan}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+    {University of Waterloo}{Waterloo, ON}
+    {Honours Computer Science, Co-operative Program}{Aug. 2023 -- May 2027}
+    \resumeSubheading
+    {Related Courses}{}
+    {Math 145/146/147/148, CS 145/136, Phys 121/122, Stat 230}{}
+\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+    {Volunteer}{Jul. 2022 - May. 2023}
+    {Friendship Inn}{Saskatoon, SK}
+    \resumeItemListStart
+    \resumeItem{Dedicated time to volunteer in providing food and support for homeless individuals.}
+    \resumeItem{Actively participated in food service, involving preparation, distribution, and cleanup.}
+    \resumeItem{Collaborated with a team of volunteers to efficiently coordinate food-related activities.}
+    \resumeItemListEnd
+    
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+
+
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+    % \resumeProjectHeading
+    %     {\textbf{Self Research Project} $|$ \emph{Jupyter Notebook, Jax, NumPy, SciPy, Matplotlib}}{Nov. 2022 - Present}
+    %     \resumeItemListStart
+    %         \resumeItem{}
+    %     \resumeItemListEnd
+    \resumeProjectHeading
+        {\textbf{Flappy Bird Game} $|$ \emph{Python, PyGame}}{May. 2022 - Jun. 2022}
+        \resumeItemListStart
+            \resumeItem{Utilized class to create and manage pipes generated in the game.}
+            \resumeItem{Used PyGame to run the game smoothly.}
+        \resumeItemListEnd
+    \resumeProjectHeading
+        {\textbf{Chess Game} $|$ \emph{JavaScript, p5.js}}{Nov. 2022 - Dec. 2022}
+        \resumeItemListStart
+            \resumeItem{Implemented Object-Oriented Programming using classes for a modular chess game structure.}
+            \resumeItem{Utilized arrow functions to enhance code conciseness and readability.}
+            \resumeItem{Designed an intuitive and visually appealing user interface for an enhanced user experience.}
+        \resumeItemListEnd
+    \resumeProjectHeading
+        {\textbf{Maze Generator} $|$ \emph{JavaScript, p5.js}}{Oct. 2022 - Jan. 2023}
+        \resumeItemListStart
+            \resumeItem{Implemented an algorithm that randomly generates a maze using classes and arrays.}
+            \resumeItem{Effectively used arrays for recursive maze generation and checking wall status during object movement.}
+            \resumeItem{Utilized class methods for creating and managing each cell in the maze.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+
+%-----------PROJECTS-----------
+\section{Awards}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{Euclid Math Contest}{: 2022 - Group V} \\
+    \textbf{CSMC Math Contest}{: 2022 - Group IV} \\
+    \textbf{Fermat Math Contest}{: 2022 - Group V} \\
+    \textbf{Hypatia Math Contest}{: 2022 - Group V} \\
+    \textbf{COMC}{: 2021 - Saskatchewan Bronze Award} \\
+    {International Student Entrance Scholarship - \$10,000 (University of Waterloo)} \\
+    {President's Scholarship of Distinction - \$2,000 (University of Waterloo)}
+    }}
+\end{itemize}
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{Languages}{: Python, C, JavaScript, HTML/CSS, SQL, Racket} \\
+    \textbf{Frameworks}{: P5.js, TailwindCSS} \\
+    \textbf{Developer Tools}{: Google Cloud Platform, VS Code, PyCharm} \\
+    \textbf{Libraries}{: pandas, NumPy, SciPy, Matplotlib, JAX, PyTorch, Scikit-Learn, SymPy}
+    }}
+\end{itemize}
+
+
+
+%-------------------------------------------
+\end{document}
