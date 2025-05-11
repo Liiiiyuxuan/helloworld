@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liiiiyuxuan</title>
+
+    <!-- preconnect + Permanent Marker & Merriweather -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Merriweather&display=swap"
+        rel="stylesheet"
+    />
+
+    <!-- Tailwind CDN + custom font families -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                fontFamily: {
+                    hand: ['"Permanent Marker"', 'cursive'],
+                    serif: ['Merriweather', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<script src="script.js" defer></script>
+
+<body class="font-serif text-gray-800 bg-white dark:bg-gray-900 dark:text-gray-100">
+
+<!-- wrap everything in a centered container -->
+<div class="max-w-xl mx-auto px-4 py-16">
+    <!-- Header (text stays left) -->
+    <header class="text-left relative">
+        <!-- Dark-mode toggle -->
+        <label class="absolute top-0 right-0 m-4 inline-flex items-center w-16 h-8 
+                bg-gray-800 dark:bg-orange-500 rounded-full cursor-pointer
+                peer-checked:bg-orange-500 transition-colors">
+            <input id="theme-toggle" type="checkbox" class="sr-only peer" />
+            <span class="absolute left-1 top-1 w-6 h-6 bg-white rounded-full
+                        transition-transform peer-checked:translate-x-8"></span>
+            <span class="absolute left-2 text-white text-sm transition-opacity
+                        peer-checked:opacity-0">🌙</span>
+            <span class="absolute right-2 text-white text-sm opacity-0 transition-opacity
+                        peer-checked:opacity-100">☀️</span>
+        </label>
+
+        <h1 class="font-hand text-5xl mb-6">Eason Li</h1>
+        <p class="mb-4 lowercase">
+            i'm a student at the University of Waterloo majoring in CS and CO. 
+        </p>
+        <p class="mb-12 lowercase">
+            Here is my <a
+                href="cv/cv.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:underline"
+            >
+            [CV]
+            </a>
+        </p>
+    </header>
+    <header class="relative">
+        <button id="menu-toggle"
+                class="absolute top-0 right-20 m-4 p-2 rounded-md ...">
+            <!-- hamburger icon -->
+        </button>
+        <label class="absolute top-0 right-4 m-4 ...">
+            <!-- dark-mode toggle -->
+        </label>
+        <!-- rest of header content -->
+      </header>
+
+    <!-- Experience -->
+    <section class="text-left">
+        <h2 class="font-hand text-3xl mb-8 lowercase">experiences</h2>
+
+        <!-- title -->
+        <div class="flex flex-col md:flex-row justify-between items-start mb-12">
+            <div class="md:w-2/3">
+                <h3 class="text-2xl mb-2 lowercase">title</h3>
+                <p class="mb-2 lowercase">
+                    what
+                </p>
+                <p class="italic text-gray-500 lowercase">
+                    <a href="https://google.com" class="hover:underline">link</a>
+                </p>
+            </div>
+            <div class="mt-6 md:mt-0 md:text-right">
+                <span class="block text-gray-500 mb-2 lowercase text-sm">
+                    time
+                </span>
+                <img
+                    src="img/rado.png"
+                    alt="logo"
+                    class="w-200 h-20 object-contain mx-auto md:mx-0"
+                />
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses -->
+    <section class="text-left">
+        <h2 class="font-hand text-3xl mb-8 lowercase">courses</h2>
+
+        <!-- Math 146 -->
+        <div class="flex flex-col md:flex-row justify-between items-start mb-12">
+            <div class="md:w-2/3">
+                <h3 class="text-2xl mb-2 lowercase">
+                    <a
+                        href="https://uwflow.com/course/math146"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="hover:underline"
+                    >
+                        Math 146
+                    </a>
+                </h3>
+                <p class="mb-2 lowercase">
+                    w Professor Jason Bell
+                </p>
+                <p class="italic text-gray-500 lowercase">
+                    <a
+                        href="notes/Math146 - 2024W.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="hover:underline"
+                    >
+                        [notes]
+                    </a>
+                </p>
+            </div>
+            <div class="mt-6 md:mt-0 md:text-right">
+                <span class="block text-gray-500 mb-2 lowercase text-sm">
+                    2024 Winter
+                </span>
+                <img
+                    src="img/cat0.png"
+                    alt="logo"
+                    class="w-200 h-20 object-contain mx-auto md:mx-0"
+                />
+            </div>
+        </div>
+
+        <!-- Math 148 -->
+        <div class="flex flex-col md:flex-row justify-between items-start mb-12">
+            <div class="md:w-2/3">
+                <h3 class="text-2xl mb-2 lowercase">
+                    <a
+                        href="https://uwflow.com/course/math148"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="hover:underline"
+                    >
+                        Math 148
+                    </a>
+                </h3>
+                <p class="mb-2 lowercase">
+                    w Professor Xuemiao Chen
+                </p>
+                <p class="italic text-gray-500 lowercase">
+                    <a
+                        href="notes/Math148 - 2024W.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="hover:underline"
+                    >
+                        [notes]
+                    </a>
+                </p>
+            </div>
+            <div class="mt-6 md:mt-0 md:text-right">
+                <span class="block text-gray-500 mb-2 lowercase text-sm">
+                    2024 Winter
+                </span>
+                <img
+                    src="img/cat1.png"
+                    alt="logo"
+                    class="w-200 h-20 object-contain mx-auto md:mx-0"
+                />
+            </div>
+        </div>
+
+        <!-- Math 245 -->
+        <div class="flex flex-col md:flex-row justify-between items-start mb-12">
+            <div class="md:w-2/3">
+                <h3 class="text-2xl mb-2 lowercase">
+                    <a
+                        href="https://uwflow.com/course/math245"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="hover:underline"
+                    >
+                        Math 245
+                    </a>
+                </h3>
+                <p class="mb-2 lowercase">
+                    w Professor Alexandru Nica
+                </p>
+                <p class="italic text-gray-500 lowercase">
+                    <a
+                        href="notes/Math245 - 2024S.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="hover:underline"
+                    >
+                        [notes]
+                    </a>
+                </p>
+            </div>
+            <div class="mt-6 md:mt-0 md:text-right">
+                <span class="block text-gray-500 mb-2 lowercase text-sm">
+                    2024 Spring
+                </span>
+                <img
+                    src="img/cat2.gif"
+                    alt="logo"
+                    class="w-200 h-20 object-contain mx-auto md:mx-0"
+                />
+            </div>
+        </div>
+
+        <!-- Math 247 -->
+        <div class="flex flex-col md:flex-row justify-between items-start mb-12">
+            <div class="md:w-2/3">
+                <h3 class="text-2xl mb-2 lowercase">
+                    <a
+                        href="https://uwflow.com/course/math247"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="hover:underline"
+                    >
+                        Math 247
+                    </a>
+                </h3>
+                <p class="mb-2 lowercase">
+                    w Professor Camila Sehnem
+                </p>
+                <p class="italic text-gray-500 lowercase">
+                    <a
+                        href="notes/Math247 - 2024S.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="hover:underline"
+                    >
+                        [notes]
+                    </a>
+                </p>
+            </div>
+            <div class="mt-6 md:mt-0 md:text-right">
+                <span class="block text-gray-500 mb-2 lowercase text-sm">
+                    2024 Spring
+                </span>
+                <img
+                    src="img/cat3.png"
+                    alt="logo"
+                    class="w-200 h-20 object-contain mx-auto md:mx-0"
+                />
+            </div>
+        </div>
+
+        <!-- Math 249 -->
+        <div class="flex flex-col md:flex-row justify-between items-start mb-12">
+            <div class="md:w-2/3">
+                <h3 class="text-2xl mb-2 lowercase">
+                    <a
+                        href="https://uwflow.com/course/math249"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="hover:underline"
+                    >
+                        Math 249
+                    </a>
+                </h3>
+                <p class="mb-2 lowercase">
+                    w Professor Oliver Pechenik
+                </p>
+                <p class="italic text-gray-500 lowercase">
+                    <a
+                        href="notes/Math249 - 2024F.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="hover:underline"
+                    >
+                        [notes]
+                    </a>
+                </p>
+            </div>
+            <div class="mt-6 md:mt-0 md:text-right">
+                <span class="block text-gray-500 mb-2 lowercase text-sm">
+                    2025 Fall
+                </span>
+                <img
+                    src="img/cat4.gif"
+                    alt="logo"
+                    class="w-200 h-20 object-contain mx-auto md:mx-0"
+                />
+            </div>
+        </div>
+
+        <!-- CO 255 -->
+        <div class="flex flex-col md:flex-row justify-between items-start mb-12">
+            <div class="md:w-2/3">
+                <h3 class="text-2xl mb-2 lowercase">
+                    <a
+                        href="https://uwflow.com/course/co255"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="hover:underline"
+                    >
+                        CO 255
+                    </a>
+                </h3>
+                <p class="mb-2 lowercase">
+                    w Professor Ricardo Fukasawa
+                </p>
+                <p class="italic text-gray-500 lowercase">
+                    <a
+                        href="notes/CO255 - 2024F.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="hover:underline"
+                    >
+                        [notes]
+                    </a>
+                </p>
+            </div>
+            <div class="mt-6 md:mt-0 md:text-right">
+                <span class="block text-gray-500 mb-2 lowercase text-sm">
+                    2025 Fall
+                </span>
+                <img
+                    src="img/cat5.gif"
+                    alt="logo"
+                    class="w-200 h-20 object-contain mx-auto md:mx-0"
+                />
+            </div>
+        </div>
+
+        <!-- Pmath 347 -->
+        <div class="flex flex-col md:flex-row justify-between items-start mb-12">
+            <div class="md:w-2/3">
+                <h3 class="text-2xl mb-2 lowercase">
+                    <a
+                        href="https://uwflow.com/course/pmath347"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="hover:underline"
+                    >
+                        Pmath 347
+                    </a>
+                </h3>
+                <p class="mb-2 lowercase">
+                    w Professor Yuru Liu
+                </p>
+                <p class="italic text-gray-500 lowercase">
+                    <a
+                        href="notes/Pmath347 - 2024F.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="hover:underline"
+                    >
+                        [notes]
+                    </a>
+                </p>
+            </div>
+            <div class="mt-6 md:mt-0 md:text-right">
+                <span class="block text-gray-500 mb-2 lowercase text-sm">
+                    2025 Fall
+                </span>
+                <img
+                    src="img/cat6.gif"
+                    alt="logo"
+                    class="w-200 h-20 object-contain mx-auto md:mx-0"
+                />
+            </div>
+        </div>
+
+        <!-- CS 245 -->
+        <div class="flex flex-col md:flex-row justify-between items-start mb-12">
+            <div class="md:w-2/3">
+                <h3 class="text-2xl mb-2 lowercase">
+                    <a
+                        href="https://uwflow.com/course/cs245"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="hover:underline"
+                    >
+                        CS 245
+                    </a>
+                </h3>
+                <p class="mb-2 lowercase">
+                    w Professor Alena Gusakov
+                </p>
+                <p class="italic text-gray-500 lowercase">
+                    <a
+                        href="notes/CS245 - 2024S.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="hover:underline"
+                    >
+                        [notes]
+                    </a>
+                </p>
+            </div>
+            <div class="mt-6 md:mt-0 md:text-right">
+                <span class="block text-gray-500 mb-2 lowercase text-sm">
+                    2024 Spring
+                </span>
+                <img
+                    src="img/cat7.gif"
+                    alt="logo"
+                    class="w-200 h-20 object-contain mx-auto md:mx-0"
+                />
+            </div>
+        </div>
+
+        <!-- CS 246 -->
+        <div class="flex flex-col md:flex-row justify-between items-start mb-12">
+            <div class="md:w-2/3">
+                <h3 class="text-2xl mb-2 lowercase">
+                    <a
+                        href="https://uwflow.com/course/cs246"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="hover:underline"
+                    >
+                        CS 246
+                    </a>
+                </h3>
+                <p class="mb-2 lowercase">
+                    w Professor Jenz Schmidt
+                </p>
+                <p class="italic text-gray-500 lowercase">
+                    <a
+                        href="notes/CS246 - 2024S.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="hover:underline"
+                    >
+                        [notes]
+                    </a>
+                </p>
+            </div>
+            <div class="mt-6 md:mt-0 md:text-right">
+                <span class="block text-gray-500 mb-2 lowercase text-sm">
+                    2024 Spring
+                </span>
+                <img
+                    src="img/cat8.jpg"
+                    alt="logo"
+                    class="w-200 h-20 object-contain mx-auto md:mx-0"
+                />
+            </div>
+        </div>
+
+        <!-- CS 240 -->
+        <div class="flex flex-col md:flex-row justify-between items-start mb-12">
+            <div class="md:w-2/3">
+                <h3 class="text-2xl mb-2 lowercase">
+                    <a
+                        href="https://uwflow.com/course/cs240"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="hover:underline"
+                    >
+                        CS 240
+                    </a>
+                </h3>
+                <p class="mb-2 lowercase">
+                    w Professor Olga Veksler
+                </p>
+                <p class="italic text-gray-500 lowercase">
+                    <a
+                        href="notes/CS240 - 2025W.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="hover:underline"
+                    >
+                        [notes]
+                    </a>
+                </p>
+            </div>
+            <div class="mt-6 md:mt-0 md:text-right">
+                <span class="block text-gray-500 mb-2 lowercase text-sm">
+                    2025 Winter
+                </span>
+                <img
+                    src="img/dog9.jpg"
+                    alt="logo"
+                    class="w-200 h-20 object-contain mx-auto md:mx-0"
+                />
+            </div>
+        </div>
+
+        <!-- CS 241 -->
+        <div class="flex flex-col md:flex-row justify-between items-start mb-12">
+            <div class="md:w-2/3">
+                <h3 class="text-2xl mb-2 lowercase">
+                    <a
+                        href="https://uwflow.com/course/cs241"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="hover:underline"
+                    >
+                        CS 241
+                    </a>
+                </h3>
+                <p class="mb-2 lowercase">
+                    w Professor Gregor Richards
+                </p>
+                <p class="italic text-gray-500 lowercase">
+                    <a
+                        href="notes/CS241 - 2025W.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="hover:underline"
+                    >
+                        [notes]
+                    </a>
+                </p>
+            </div>
+            <div class="mt-6 md:mt-0 md:text-right">
+                <span class="block text-gray-500 mb-2 lowercase text-sm">
+                    2025 Winter
+                </span>
+                <img
+                    src="img/cat10.jpg"
+                    alt="logo"
+                    class="w-200 h-20 object-contain mx-auto md:mx-0"
+                />
+            </div>
+        </div>
+    </section>
+
+    <footer class="mt-16 pt-8 border-t border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-400 text-sm flex flex-col md:flex-row items-center justify-between">
+        <p a href="#" id="copy-email" class="hover:underline">Email: e228li[at]uwaterloo[dot]ca</p>
+        <div class="flex space-x-6 italic mt-4 md:mt-0">
+            <a href="https://www.linkedin.com/in/eason-li-539994276/" target="_blank" class="hover:underline">linkedin</a>
+            <a href="https://github.com/Liiiiyuxuan" target="_blank" class="hover:underline">github</a>
+            <a href="#" id="copy-discord" class="hover:underline">discord</a>
+        </div>
+    </footer>        
+
+</div>
+
+</body>
+</html>

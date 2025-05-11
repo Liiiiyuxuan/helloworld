@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
             await navigator.clipboard.writeText(emailTag);
             copyEmail.textContent = 'copied!';
             setTimeout(() => {
-                copyEmail.textContent = 'Email: e228li[at]uwaterloo[dot]ca';
+                copyEmail.textContent = 'e228li@uwaterloo.ca';
             }, 2000);
         } catch (err) {
             console.error('Copy failed:', err);
