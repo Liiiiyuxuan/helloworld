@@ -36,8 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// dark mode
-
 document.addEventListener('DOMContentLoaded', () => {
     const toggle = document.getElementById('theme-toggle');
     if (
@@ -56,6 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// script.js
 document.addEventListener('DOMContentLoaded', () => {
     const toggle = document.getElementById('theme-toggle');
 
@@ -83,25 +82,26 @@ document.addEventListener('DOMContentLoaded', () => {
     // 2. Define the set of Tailwind font classes you want to cycle through.
     //    By default Tailwind has 'font-sans', 'font-serif', 'font-mono',
     //    plus your custom 'font-hand'.
-    const fonts = ['font-hand', 'font-pacifico', 'font-dynapuff', ];
-
+    const fonts = ['font-hand', 'font-serif', 'font-sans', 'font-mono'];
+  
     // 3. Every N milliseconds, pick a new font and swap it in.
-    const intervalMs = 750; // change every 5 seconds
+    const intervalMs = 5000; // change every 5 seconds
     setInterval(() => {
-        // find which one is currently applied
-        const current = fonts.find(f => heading.classList.contains(f));
-    
-        // build a list of the other choices
-        const choices = fonts.filter(f => f !== current);
-    
-        // pick one at random
-        const next = choices[Math.floor(Math.random() * choices.length)];
-    
-        // swap classes
-        if (current) {
-            heading.classList.replace(current, next);
-        } else {
-            heading.classList.add(next);
-        }
+      // find which one is currently applied
+      const current = fonts.find(f => heading.classList.contains(f));
+  
+      // build a list of the other choices
+      const choices = fonts.filter(f => f !== current);
+  
+      // pick one at random
+      const next = choices[Math.floor(Math.random() * choices.length)];
+  
+      // swap classes
+      if (current) {
+        heading.classList.replace(current, next);
+      } else {
+        heading.classList.add(next);
+      }
     }, intervalMs);
-});
+  });
+  

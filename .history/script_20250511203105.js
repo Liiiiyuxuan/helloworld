@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 2. Define the set of Tailwind font classes you want to cycle through.
     //    By default Tailwind has 'font-sans', 'font-serif', 'font-mono',
     //    plus your custom 'font-hand'.
-    const fonts = ['font-hand', 'font-pacifico', 'font-dynapuff', ];
+    const fonts = ['font-hand', 'font-pacifico', ];
 
     // 3. Every N milliseconds, pick a new font and swap it in.
     const intervalMs = 750; // change every 5 seconds
