@@ -36,44 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-    const copyEmail = document.getElementById('copy-email2');
-
-    copyEmail.addEventListener('click', async (evt) => {
-        evt.preventDefault();
-        const emailTag = 'e228li@uwaterloo.ca';
-
-        try {
-            await navigator.clipboard.writeText(emailTag);
-            copyEmail.textContent = 'email copied!';
-            setTimeout(() => {
-                copyEmail.textContent = 'For final information, email me.';
-            }, 2000);
-        } catch (err) {
-            console.error('Copy failed:', err);
-        }
-    });
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    const copyEmail = document.getElementById('copy-email3');
-
-    copyEmail.addEventListener('click', async (evt) => {
-        evt.preventDefault();
-        const emailTag = 'e228li@uwaterloo.ca';
-
-        try {
-            await navigator.clipboard.writeText(emailTag);
-            copyEmail.textContent = 'email copied!';
-            setTimeout(() => {
-                copyEmail.textContent = 'For final information, email me.';
-            }, 2000);
-        } catch (err) {
-            console.error('Copy failed:', err);
-        }
-    });
-});
-
 // dark mode
 
 document.addEventListener('DOMContentLoaded', () => {

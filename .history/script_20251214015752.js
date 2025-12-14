@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    const copyEmail = document.getElementById('copy-email3');
+    const copyEmail = document.getElementById('copy-email2');
 
     copyEmail.addEventListener('click', async (evt) => {
         evt.preventDefault();

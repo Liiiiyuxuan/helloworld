@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    const copyEmail = document.getElementById('copy-email2');
+    const copyEmail = document.getElementById('copy-email');
 
     copyEmail.addEventListener('click', async (evt) => {
         evt.preventDefault();
@@ -47,26 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
             await navigator.clipboard.writeText(emailTag);
             copyEmail.textContent = 'email copied!';
             setTimeout(() => {
-                copyEmail.textContent = 'For final information, email me.';
-            }, 2000);
-        } catch (err) {
-            console.error('Copy failed:', err);
-        }
-    });
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    const copyEmail = document.getElementById('copy-email3');
-
-    copyEmail.addEventListener('click', async (evt) => {
-        evt.preventDefault();
-        const emailTag = 'e228li@uwaterloo.ca';
-
-        try {
-            await navigator.clipboard.writeText(emailTag);
-            copyEmail.textContent = 'email copied!';
-            setTimeout(() => {
-                copyEmail.textContent = 'For final information, email me.';
+                copyEmail.textContent = 'Email: e228li[at]uwaterloo[dot]ca';
             }, 2000);
         } catch (err) {
             console.error('Copy failed:', err);
